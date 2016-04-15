@@ -104,7 +104,8 @@
     <gap:plugin name="phonegap-plugin-push" source="npm" spec="1.5.2" />
 
     <!-- see: https://www.npmjs.com/package/cordova-plugin-facebook4 -->
-    <gap:plugin name="cordova-plugin-facebook4" source="npm" spec="1.4.0" >
+    <!-- gap:plugin name="cordova-plugin-facebook4" source="npm" spec="1.4.0" -->
+    <gap:plugin spec="https://github.com/jeduan/cordova-plugin-facebook4#aff9a08a86cc6c6a18019f7adc2896ddf97c11cd" source="git" >
         <param name="APP_ID" value="1611521742507091" />
         <param name="APP_NAME" value="Mahjong" />
     </gap:plugin>
