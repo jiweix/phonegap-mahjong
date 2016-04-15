@@ -14,7 +14,7 @@
       <string>100</string>
     </gap:config-file>
 
-    <content src="http://jiweix.github.io/default-theme/app/index.html?phonegapPlugins=v100&amp;onlyGameId=5209490823577600-0" />
+    <content src="http://jiweix.github.io/default-theme/app/index.html?phonegapPlugins=v101&amp;onlyGameId=5209490823577600-0" />
 
     <name>Mahjong</name>
     <author email="jx734@nyu.edu">
