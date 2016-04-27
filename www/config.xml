@@ -4,14 +4,14 @@
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         xmlns:android   = "http://schemas.android.com/apk/res/android"
         id          = "com.gamingplatform.mahjong"
-        versionCode = "1"
-        version     = "1.0.0" >
+        versionCode = "2"
+        version     = "2.0.0" >
     <!-- versionCode is optional and Android only:
       needs to be increased every time you submit a new APK version.
       see: http://developer.android.com/tools/publishing/versioning.html
     -->
     <gap:config-file platform="ios" parent="CFBundleShortVersionString">
-      <string>100</string>
+      <string>200</string>
     </gap:config-file>
 
     <content src="http://jiweix.github.io/default-theme/app/index.html?phonegapPlugins=v101&amp;onlyGameId=5209490823577600-0" />
@@ -32,7 +32,7 @@
 
     <!-- Customize your app and platform with the preference element. -->
     <preference name="phonegap-version"           value="cli-5.2.0" />
-    <preference name="orientation"                value="landscape" />      <!-- Only landscape is enabled -->
+    <preference name="orientation"                value="landscape" />      <!-- all: default means both landscape and portrait are enabled -->
     <preference name="fullscreen"                 value="false" />          <!-- all: hides the status bar at the top of the screen -->
     <preference name="target-device"              value="universal" />      <!-- ios: possible values handset, tablet, or universal -->
     <preference name="prerendered-icon"           value="false" />          <!-- ios: if icon is prerendered, iOS will not apply it's gloss to the app's icon on the user's home screen -->
@@ -61,8 +61,6 @@
     <!-- I only want splash screen for iOS because it's mandatory. I don't think it's needed.
       Moreover, on Android, the splash screen gets stretched which is ugly,
       unless you use the more complex 9-patch png format.
-      If you really want to use one for Android, use a simple white splash:
-      <splash src="pgbomit/splash-white-1x1.png" />
     -->
     <!-- iPhone and iPod touch -->
     <gap:splash src="pgbomit/splash-320x480.png" gap:platform="ios" width="320" height="480" />
@@ -103,8 +101,8 @@
     <!-- see: https://www.npmjs.com/package/phonegap-plugin-push -->
     <gap:plugin name="phonegap-plugin-push" source="npm" spec="1.5.2" />
 
-    <!-- see: https://www.npmjs.com/package/cordova-plugin-facebook4 -->
-    <!-- gap:plugin name="cordova-plugin-facebook4" source="npm" spec="1.4.0" -->
+    <!-- see: https://www.npmjs.com/package/cordova-plugin-facebook4 ; 
+      using specific git version due to this: http://community.phonegap.com/nitobi/topics/sudden-build-error-android -->
     <gap:plugin spec="https://github.com/jeduan/cordova-plugin-facebook4#aff9a08a86cc6c6a18019f7adc2896ddf97c11cd" source="git" >
         <param name="APP_ID" value="1611521742507091" />
         <param name="APP_NAME" value="Mahjong" />
@@ -151,4 +149,3 @@
       <param name="URL_SCHEME" value="mahjong" />
     </gap:plugin>
 </widget>
-
