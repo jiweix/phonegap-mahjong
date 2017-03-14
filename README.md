@@ -1,2 +1,2 @@
-# phonegap-tictactoe
-Phonegap wrapper for tictactoe
+# phonegap-Mahjong
+Phonegap wrapper for Mahjong game
